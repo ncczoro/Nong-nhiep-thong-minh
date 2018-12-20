@@ -1,0 +1,135 @@
+/*****Designer Amresh kanna************/
+/*******Appcookiedeveopler***********/
+#bg{
+  /* margin:10px -10%;
+  padding:0; */
+  height: 650px;
+    margin: 30px 0;
+    width: 100%;
+    font-family: raleway,arial,helvetica,sans-serif;
+    /* background: linear-gradient(45deg,rgb(36, 9, 48),rgb(119, 22, 3)); */
+  }
+  .wrapper{
+    width:400px;
+    height:30%;
+    margin: 10% 32% 0 34%;
+    background:rgba(20,30,40,0.6);
+    padding:5px 0 0 0 ;
+    border:25px double ivory;
+    border-top-color:transparent;
+    animation:3s blink ease-in-out infinite;
+    border-bottom-color:transparent;
+    box-sizing:padding-box;
+    position:absolute;
+    border-radius:28%;
+    box-shadow:0px 60px 200px -40px #000;
+  }
+  input[type="text"],input[type="password"]{
+  margin:0px 50px;
+  padding:5px 15px;
+  height:30px;
+  width:250px;
+  display:block;
+  color:#fff;
+  font-size:1.2em;
+  position:relative;
+  box-sizing:padding-box;
+  background:transparent;
+  border:none;
+  border-bottom:5px double #fff;
+  
+  }
+  input[type="text"],input[type="password"]:focus{
+  outline:none;
+  }
+  input[type="submit"]{
+  margin:0 110px;
+  width:150px;
+  height:35px;
+  padding:5px;
+  background: linear-gradient(45deg,rgb(36, 9, 48),rgb(119, 22, 3));
+  color: white;
+  border:1px solid #000;
+  transition: all 0.5 ease 0.2s;
+  border-radius:10px;
+  box-shadow:0px 10px 20px -8px springgreen;
+  }
+  input[type="submit"]:hover{
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px 2px ;
+  }
+  /*************Shake animation**********/
+  .wrapper:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+  /*****************************/
+  @keyframes blink {
+  20% ,30% {
+          border:25px double rgb(228, 228, 108);
+           border-top-color:transparent;
+        border-bottom-color:transparent;
+      }
+  50%,70%{
+         border:25px double rgb(124, 230, 177);
+           border-top-color:transparent;
+        border-bottom-color:transparent;
+  
+  }
+  80%,90%,100%{
+            border:25px double rgb(24, 22, 22);
+           border-top-color:transparent;
+        border-bottom-color:transparent;
+  
+  }		
+  80%,90%,100%{
+            border:25px double rgb(100, 98, 218);
+           border-top-color:transparent;
+        border-bottom-color:transparent;
+  
+  }		
+  
+  }
+  .keepSignIn{
+    color: white;
+    position: absolute;
+    text-decoration: none;
+    top: 400px;
+    left: 636px;
+  }
+.forget:hover{
+  text-decoration: white;
+  }
+.btKeepSignIn{
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  right: 236px;
+    top: 128px;
+  border-radius: 4px;
+}
+.btKeepSignIn:hover a{
+  color: orange;
+}
+  
+ 

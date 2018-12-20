@@ -1,0 +1,270 @@
+<div class="contai" [style.background-color]="isShowMenu ? 'whitesmoke' : 'white' ">
+    <div class="dropdown">
+        <button class="dropbtn" (click)="ShowMenu()">Menu</button>
+        <div id="menu" *ngIf="isShowMenu == true">
+            <ul>
+                <li (click)="ShowMain()">Trang chủ</li>
+                <li (click)="ShowDieuKhien()">Điều Khiển</li>
+                <li (click)="ShowThietLap()">Thiết Lập</li>
+                <li (click)="ShowBaoCao()">Báo Cáo</li>
+                <li (click)="ShowLichSu()">Lịch Sử</li>
+            </ul>
+        </div>
+    </div>
+    <div class="MainShow" [ngClass]="{'isMainShow': isShowMain}">
+        <div class="NhietDo">
+            <p>Nhiệt Độ</p>
+            <img style="height: 136px;" src="../../../assets/tempur.png" alt="Nhiet Do">
+            <h2 style="font-size: 80px;">30 &#176;C</h2>
+
+            <div class="limit0">
+                <p> <span style="color: rgb(23, 167, 23); position: absolute; top: 330px; ">&#8711; </span>
+                    <span style="padding-left: 120px;  color: rgb(180, 43, 43);">
+                        <div style="     width: 13px;
+                    transform: rotate(180deg);
+                    padding-right: 207px;
+                    position: absolute;
+                    bottom: 118px;
+                ">&#8711;</div> </span></p>
+
+                <p style="font-size: 32px;">18 <span style="padding-left: 90px; ">20</span></p>
+                <p> <span style="color: rgb(23, 167, 23);   ">Giới hạn dưới </span> <span style="padding-left: 35px; color:rgb(180, 43, 43); ">Giới
+                        hạn trên</span></p>
+            </div>
+
+        </div>
+        <div class="DoAmKK">
+            <p>Độ Ẩm không khí</p>
+            <img style="height: 136px;" src="../../../assets/DoAmkk.png" alt="Do Am khong khi">
+            <h2 style="font-size: 80px;">28 &#176;C</h2>
+            <div class="limit0">
+                <p> <span style="color: rgb(23, 167, 23);  position: absolute;
+                    top: 330px;">&#8711; </span>
+                    <span style="padding-left: 120px;  color: rgb(180, 43, 43);">
+                        <div style="     width: 13px;
+                    transform: rotate(180deg);
+                    padding-right: 207px;
+                    position: absolute;
+                    bottom: 118px;
+                ">&#8711;</div> </span></p>
+
+                <p style="font-size: 32px;">18 <span style="padding-left: 90px; ">20</span></p>
+                <p> <span style="color: rgb(23, 167, 23)">Giới hạn dưới </span> <span style="padding-left: 35px; color:rgb(180, 43, 43); ">Giới
+                        hạn trên</span></p>
+            </div>
+        </div>
+        <div class="DoAmDat">
+            <p>Độ Ẩm Đất</p>
+            <img style="height: 136px;" src="../../../assets/DoAmDat.png" alt="Do Am dat">
+            <h2 style="font-size: 80px;">29 &#176;C</h2>
+            <div class="limit0">
+                <p> <span style="color: rgb(23, 167, 23); position: absolute;
+                    top: 330px;">&#8711; </span>
+                    <span style="padding-left: 120px;  color: rgb(180, 43, 43);">
+                        <div style="     width: 13px;
+                    transform: rotate(180deg);
+                    padding-right: 207px;
+                    position: absolute;
+                    bottom: 118px;
+                ">&#8711;</div> </span></p>
+
+                <p style="font-size: 32px;">18 <span style="padding-left: 90px; ">20</span></p>
+                <p> <span style="color: rgb(23, 167, 23)">Giới hạn dưới </span> <span style="padding-left: 35px; color:rgb(180, 43, 43); ">Giới
+                        hạn trên</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="DieuKhien" [ngClass]="{'isShowDieuKhien': isShowDieuKhien
+                                        }">
+    <div style="height: 60px;background: whitesmoke;font-weight: 700;font-size: 35px;line-height: 60px;
+    color: green;">Chế độ</div>
+    <button style="position: absolute;left: 25%;top: 1px;height: 60px;width: 120px;">Tự động</button>
+    <button style="position: absolute;left: 35%;top: 1px;height: 60px;width: 120px;">Bằng tay</button>
+    <br>
+        <table style="width: 1000px;text-align: center;height: 323px;font-size: 18px;font-family: sans-serif;">
+            <thead style="background-color: limegreen;">
+                <tr style="height: 60px;">
+                    <th>STT</th>
+                    <th>Tên thiết bị</th>
+                    <th>Trạng thái</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody class="myBodyTable">
+                <tr style="border-bottom: 1px solid red">
+                    <td>1</td>
+                    <td>Đèn gia nhiệt</td>
+                    <td>Đang bật</td>
+                    <td style="    padding-right: 60px;">
+                        <label class='toggle-label'>
+                            <input type='checkbox' />
+                            <span class='back'>
+                                <span class='toggle'></span>
+                                <span class='label on'>Bật</span>
+                                <span class='label off'>Tắt</span>
+                            </span>
+
+                        </label>
+                        <!-- <button style="background: green">Bật</button> &nbsp; &nbsp;
+                        <button style="background: red;">Tắt</button> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Phun sương</td>
+                    <td>Đang bật</td>
+                    <td style="    padding-right: 60px;">
+                        <label class='toggle-label'>
+                            <input type='checkbox' />
+                            <span class='back'>
+                                <span class='toggle'></span>
+                                <span class='label on'>Bật</span>
+                                <span class='label off'>Tắt</span>
+                            </span>
+
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Quạt hút</td>
+                    <td>Đang bật</td>
+                    <td style="    padding-right: 60px;">
+                        <label class='toggle-label'>
+                            <input type='checkbox' />
+                            <span class='back'>
+                                <span class='toggle'></span>
+                                <span class='label on'>Bật</span>
+                                <span class='label off'>Tắt</span>
+                            </span>
+
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Quạt thổi</td>
+                    <td>Đang bật</td>
+                    <td style="    padding-right: 60px;">
+                        <label class='toggle-label'>
+                            <input type='checkbox' />
+                            <span class='back'>
+                                <span class='toggle'></span>
+                                <span class='label on'>Bật</span>
+                                <span class='label off'>Tắt</span>
+                            </span>
+
+                        </label>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="ThietLap" [ngClass]="{'isShowThietLap': isShowThietLap
+                                    }">
+        <table  style="width: 1000px;text-align: center;height: 323px;font-size: 18px;font-family: sans-serif;">
+            <thead style="background-color: limegreen;"> 
+                <tr>
+                    <th></th>
+                    <th style="text-align: center;
+                             padding-right: 200px;">Thiết lập Nhiệt Độ</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Giới hạn trên</td>
+                    <td style=" position: absolute;
+                                left: 454px;">40</td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <td>Giới hạn dưới</td>
+                    <td style=" position: absolute;
+                                left: 454px;">20</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <table class="table table-hover" style="width: 1000px;">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th style="    text-align: center;
+                                padding-right: 188px;">Thiết lập Độ Ẩm Không Khí</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Giới hạn trên</td>
+                    <td style="position: absolute;
+                                 left: 454px;">40</td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <td>Giới hạn dưới</td>
+                    <td style="position: absolute;
+                                left: 454px;">20</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <table class="table table-hover" style="width: 1000px;">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th style="    text-align: center;
+                                padding-right: 195px;">Thiết lập Độ Ẩm Đất</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Giới hạn trên</td>
+                    <td style="position: absolute;
+                                left: 454px;">40</td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <td>Giới hạn dưới</td>
+                    <td style="position: absolute;
+                                left: 454px;">20</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button class="BtThietLap">Thiết lập</button>
+
+    </div>
+    <div class="BaoCao" [ngClass]="{'isShowBaoCao': isShowBaoCao
+                                        }">
+        Bao Cao work
+    </div>
+    <div class="LichSu" [ngClass]="{'isShowLichSu': isShowLichSu
+                                        }">
+        Lich Su work
+    </div>
+</div>
+
+<div class="logOut">
+    <a style="
+    color: white;
+    text-decoration: none;
+    font-size: medium; 
+    font-weight: bold;" class="aLogOut" [routerLink]="[ '/Login']">Đăng xuất</a>
+</div>
+

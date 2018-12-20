@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*phần content sẽ bao gồn border (ví dụ: width = 500px = content + boder + padding*/
+    -moz-box-sizing: border-box; /* firefox phien bang cu hien thi duoc*/
+    -webkit-box-sizing: border-box; /*chrome phien ban cu hien thi duoc*/
+    
+
+}

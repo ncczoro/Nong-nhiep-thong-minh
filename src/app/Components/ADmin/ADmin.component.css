@@ -1,0 +1,21 @@
+.logOut{
+    position: absolute;
+    /* height: 29px; */
+    top: 11px;
+    right: 33px;
+    z-index: 6;
+  }
+
+#admin{
+  margin-top: 66px;
+}
+.taoTaiKhoan{
+  height: 105px;
+  width: 173px;
+  background: lightgreen;
+  line-height: 105px;
+  margin-left: 31px;
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 84px;
+}

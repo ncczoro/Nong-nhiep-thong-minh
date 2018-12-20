@@ -1,0 +1,10 @@
+
+
+     /* position: relative; Dùng để thiết lập một phần tử sử dụng các thuộc tính position 
+     mà không làm ảnh hưởng đến việc hiển thị ban đầu. 
+     Để có thể dùng top, bottom, left, right, z-index,...*/
+     /* fixed: Hiển thị luôn đi theo trình duyệt khi cuộn trang. */
+     /*position: absolute;  Dùng để thiết lập vị trí của một phần tử nhưng nó sẽ 
+     luôn nằm trong một phần tử mẹ đang là relative.*/
+     /* static: Đưa phần tử về hiển thị theo kiểu mặc định. */
+

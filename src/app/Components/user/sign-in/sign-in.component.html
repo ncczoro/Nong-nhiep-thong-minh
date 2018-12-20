@@ -1,0 +1,23 @@
+<div id="bg">
+    <div class="wrapper">
+        <form (ngSubmit)="loginUser(username.value, password.value)">
+            <input type="text"  placeholder="Tài khoản" required #username> <br>
+            <input type="password"  placeholder="Mật khẩu" required #password> <br>
+            <!-- <div>
+                <button class="btKeepSignIn" (click)="KeepSignIn()" 
+            [ngStyle]="{'background': isKeepSignIn ? 'purple' : 'white'}" > </button>
+             <span style="padding-left: 137px;">Nhớ mật khẩu</span>
+            </div> -->
+
+            <input type="submit" name="submit" value="Đăng nhập">
+        </form>
+    </div>
+    <div class="keepSignIn">
+        <a href="https://google.com" target="blank"  style="
+            position: relative;
+            right: 15%;
+            text-decoration: none;
+            color: blue;" > Quên mật khẩu?</a>
+    </div>
+
+</div>
