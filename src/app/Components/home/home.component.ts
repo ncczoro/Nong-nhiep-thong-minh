@@ -14,7 +14,7 @@ import { Contact } from '../../Model/Contact.class';
 })
 export class HomeComponent implements OnInit, OnDestroy {
   // public subscription: Subscription;
-
+  private test : string = "";
   public isShowMenu: boolean = true;
 
   public isShowMain: boolean = false;
