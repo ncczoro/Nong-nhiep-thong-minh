@@ -9,7 +9,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 export class AppComponent implements OnInit {
 
   public getUsn: string;
-  public test: string ='ok chuaaaa';
+  public test: string ='ok chuaaaaaaaa';
   constructor( )
   {
 
