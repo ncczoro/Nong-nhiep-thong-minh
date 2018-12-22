@@ -19,11 +19,17 @@ import { FooterComponent } from './Components/footer/footer.component';
 import { HomeHomeComponent } from './Components/home-home/home-home.component';
 
 
-import { AngularFireModule } from 'angularfire2';
-import { AngularFireDatabaseModule } from 'angularfire2/database';
+// import { AngularFireModule } from 'angularfire2';
+// import { AngularFireDatabaseModule } from 'angularfire2/database';
+
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+
+
 
 
 import {environment} from '../environments/environment'
+import { MyFirebabeServiceService } from './FirebaseService/my-firebabe-service.service';
 
 @NgModule({
   declarations: [
@@ -45,11 +51,12 @@ import {environment} from '../environments/environment'
      
     RouterModule.forRoot(appRouter),
     AngularFireModule.initializeApp(environment.FirebaseConfig),
-    AngularFireDatabaseModule
+    AngularFirestoreModule
   ],
   providers: [
     TodoService,
-    LoginGuard
+    LoginGuard,
+    MyFirebabeServiceService
   ],
   bootstrap: [AppComponent]
 })

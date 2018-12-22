@@ -5,12 +5,12 @@
 export const environment = {
   production: false,
    FirebaseConfig : {
-    apiKey: "AIzaSyBN_9RbsAm5FajvJFNJKYWjeOQzgHmiXko",
-    authDomain: "test1-268ab.firebaseapp.com",
-    databaseURL: "https://test1-268ab.firebaseio.com",
-    projectId: "test1-268ab",
-    storageBucket: "test1-268ab.appspot.com",
-    messagingSenderId: "91163671691"
+    apiKey: "AIzaSyA0QQQRPwWU4opRFogsTKJeuZTrcIWIwas",
+    authDomain: "iot-cd.firebaseapp.com",
+    databaseURL: "https://iot-cd.firebaseio.com",
+    projectId: "iot-cd",
+    storageBucket: "iot-cd.appspot.com",
+    messagingSenderId: "118359594209"
    }
 };
 
