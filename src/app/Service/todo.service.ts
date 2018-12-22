@@ -4,9 +4,6 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Observable } from "rxjs";
 import { HttpHeaders } from '@angular/common/http';
 
-import { AngularFireModule } from 'angularfire2';
-import { AngularFireDatabaseModule } from 'angularfire2/database';
-
 
 import {environment} from '../../environments/environment'
 

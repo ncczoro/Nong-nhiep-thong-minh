@@ -7,6 +7,8 @@ import { isNgTemplate } from '@angular/compiler';
 import { Route, Router } from '@angular/router';
 import { Emp } from '../../Model/Emp.class';
 import { Contact } from '../../Model/Contact.class';
+import { MyFirebabeServiceService } from '../../FirebaseService/my-firebabe-service.service';
+import { PrameterEnviroment } from '../../FirebaseService/my-firebase.modle';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -22,14 +24,20 @@ export class HomeComponent implements OnInit, OnDestroy {
   public isShowThietLap: boolean = false;
   public isShowBaoCao: boolean = false;
   public isShowLichSu: boolean = false;
+
+  // https://www.youtube.com/watch?v=5I6k77uqtLY&t=1313s
+
   // public todosContact: Contact[] = [];
 
-
   constructor(
+    //inject dependency injections here, not progress anything.
+
+    private MyFirebabeServiceService : MyFirebabeServiceService
     // public todoService: TodoService,
     // public routerService: Router
 
-  ) { }
+  ) {
+   }
   ngOnInit() {
     // this.loadData();
     // this.loadContact();
